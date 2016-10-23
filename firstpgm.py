@@ -1,3 +1,5 @@
+###first rpi script###
+
 #!/usr/bin/python
 
 import sys
