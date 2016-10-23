@@ -1,4 +1,4 @@
-###first rpi script###
+#first rpi script::
 
 #!/usr/bin/python
 
@@ -23,6 +23,4 @@ elif year == 8:
 	print("I hope you are studying for your exams!")
 else:
 	print("Thanks for playing")
-
-
 
