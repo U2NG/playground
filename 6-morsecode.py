@@ -53,7 +53,7 @@ print("Morese Code")
 loop_count = input("How many times would you like SOS to loop?: ")
 loop_count = int(loop_count) # Convert text input into an integer
 
-while loop-count > 0: # loop around the chosen number of times
+while loop_count > 0: # loop around the chosen number of times
     loop_count = loop_count - 1
     morseS()
     letterSpace()
