@@ -74,7 +74,7 @@ while True:
     else:
 	    os.system('clear') # Clears the screen
 	    print("Waiting for you to send an SOS")
-    time.sleep(0.5) # Sleep for 0.5 seconds
+    time.sleep(3) # Sleep for 2 seconds
 
 
 #prompt
