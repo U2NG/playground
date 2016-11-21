@@ -10,7 +10,7 @@ import RPi.GPIO as GPIO
 # Set the GPIO pin naming mode
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
-PINBuzzer = 25 # sets teh buzzer pin 25
+PINBuzzer = 26 # sets teh buzzer pin 25
 
 # Sets PINBuzzer as an output pin and initialize it to 'off'
 GPIO.setup(PINBuzzer, GPIO.OUT)
