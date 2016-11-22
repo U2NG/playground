@@ -15,8 +15,10 @@ GPIO.setwarnings(False)
 LEDred = 18
 LEDyellow = 23
 LEDgreen = 24
+
 # Buzzer variable
 PINBuzzer = 26
+
 # Switch variable
 ButtonPin = 25
 
@@ -65,7 +67,7 @@ def SteadyRed():
 def StartWalking():
     # make the buzzer buzz on and off, half a second of
     # sound followed by half a second of silence
-    for sound_count in range(0, 3):
+    for sound_count in range(0, 4):
    		GPIO.output(PINBuzzer, GPIO.HIGH)
    		time.sleep(0.5)
    		GPIO.output(PINBuzzer, GPIO.LOW)
@@ -73,11 +75,11 @@ def StartWalking():
    		
 
 # turn the buzzer off and wait for 2 seconds
-# (if you have a second gree 'pedestrian' LED, make it flash on and
+# (if you have a second green 'pedestrian' LED, make it flash on and
 # off for the 2 seconds)
 def DontWalk():
     # remember all code in the function is indented
-    GPIO.output(PINbuzzer, GPIO.LOW)
+    GPIO.output(PINBuzzer, GPIO.LOW)
     time.sleep(2)
 
 
@@ -96,10 +98,10 @@ def FlashingAmberGreen():
 # (turn the green 'pedestrian' LED off and the red on)
 def FlashingAmber():
     # remember all code in the function is indented
-	GPIO.output(LEDyellow, GPIO.HIGH)
-    	time.sleep(0.5)
-    	GPIO.output(LEDyellow, GPIO.LOW)
-    	time.sleep(0.5)
+    GPIO.output(LEDyellow, GPIO.HIGH)
+    time.sleep(0.5)
+    GPIO.output(LEDyellow, GPIO.LOW)
+    time.sleep(0.5)
 
 
 # go throughout the traffic light sequence by calling each function
