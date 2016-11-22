@@ -44,6 +44,7 @@ GPIO.output(LEDgreen, GPIO.LOW)
 # (if you have the second 'pedestrian LEDs, turn the red on & green off)
 def StartGreen():
     # remember all code in the function is indented
+    GPIO.output(LEDred, GPIO.LOW)
     GPIO.output(LEDgreen, GPIO.HIGH)
     
 
@@ -67,7 +68,7 @@ def SteadyRed():
 def StartWalking():
     # make the buzzer buzz on and off, half a second of
     # sound followed by half a second of silence
-    for sound_count in range(0, 4):
+    for sound_count in range(0, 10):
    		GPIO.output(PINBuzzer, GPIO.HIGH)
    		time.sleep(0.5)
    		GPIO.output(PINBuzzer, GPIO.LOW)
@@ -87,7 +88,7 @@ def DontWalk():
 # (and the green 'pedestrian' LED too)
 def FlashingAmberGreen():
     # remember all code in the function is indented
-    for flash_amber in range(0,5):
+    for flash_amber in range(0,8):
     	GPIO.output(LEDyellow, GPIO.HIGH)
     	time.sleep(0.5)
     	GPIO.output(LEDyellow, GPIO.LOW)
@@ -117,9 +118,12 @@ def TrafficLightSequence():
     FlashingAmber()
     StartGreen()
     
+
+# sequence code starts here
     
 os.system('clear') # clears the screen
 print("Traffic Lights")
+print("Press button to start traffic light sequence")
 
 # initialize the traffic lights
 StartGreen()
