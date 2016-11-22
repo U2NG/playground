@@ -124,6 +124,7 @@ def TrafficLightSequence():
 os.system('clear') # clears the screen
 print("Traffic Lights")
 print("Press button to start traffic light sequence")
+print("Press in crtl + c (IDLE3) to stop program")
 
 # initialize the traffic lights
 StartGreen()
