@@ -12,6 +12,7 @@ while True:
     p = round(p, 1)
     h = round(h, 1)
 
+# show temperature status
     if t > 18.3 and t < 26.7:
         bg = [0, 100, 0] #green
     else:
