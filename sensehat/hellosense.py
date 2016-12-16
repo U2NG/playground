@@ -8,6 +8,6 @@ sense.set_rotation(180)
 
 # sense ojbject loop
 while True:
-    sense.show_message("Hello Remy", scroll_speed=0.05, text_colour=[255,0,0], back_colour=[0,0,0])
+    sense.show_message("Merry Christmas !!!", scroll_speed=0.05, text_colour=[255,0,0], back_colour=[0,0,0])
 
 
